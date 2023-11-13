@@ -2,7 +2,7 @@
 
 After [installing](./installation.md), use the following command to run it:
 
-```bash
+```shell
 yazi
 ```
 
@@ -127,8 +127,8 @@ _Observation: `, ⇒ a` indicates pressing the `,` key followed by pressing the 
 
 You can also use this convenient wrapper that provides the ability to change the current working directory when exiting Yazi.
 
-<Tabs>
-  <TabItem value="bash-zsh" label="Bash / Zsh" default>
+::: tabs
+== Bash/Zsh
 
 ```bash
 function ya() {
@@ -141,10 +141,9 @@ function ya() {
 }
 ```
 
-  </TabItem>
-  <TabItem value="fish" label="Fish">
+== Fish
 
-```shell
+```fish
 function ya
 	set tmp (mktemp -t "yazi-cwd.XXXXX")
 	yazi --cwd-file="$tmp"
@@ -155,8 +154,7 @@ function ya
 end
 ```
 
-  </TabItem>
-  <TabItem value="nushell" label="Nushell">
+== Nushell
 
 ```shell
 def-env ya [] {
@@ -170,5 +168,4 @@ def-env ya [] {
 }
 ```
 
-  </TabItem>
-</Tabs>
+:::

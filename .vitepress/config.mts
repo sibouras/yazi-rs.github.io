@@ -1,4 +1,6 @@
-import { DefaultTheme, defineConfig } from "vitepress"
+import { defineConfig, type DefaultTheme } from "vitepress"
+
+import { tabsMarkdownPlugin } from "vitepress-plugin-tabs"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -47,6 +49,12 @@ export default defineConfig({
 
 		footer: {
 			copyright: `Copyright © ${new Date().getFullYear()} Yazi. Built with ❤️️.`,
+		},
+	},
+
+	markdown: {
+		config(md) {
+			md.use(tabsMarkdownPlugin)
 		},
 	},
 })
