@@ -1,7 +1,5 @@
 ---
-slug: why-is-yazi-fast
 title: Why is Yazi fast?
-authors: [sxyazi]
 ---
 
 This article assumes that you have already used Yazi and are familiar with most of its features.

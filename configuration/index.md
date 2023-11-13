@@ -1,10 +1,3 @@
----
-id: overview
-sidebar_position: 0
-sidebar_label: Configuration
-description: Learn how to configure Yazi.
----
-
 # Configuration
 
 You can find the preset configuration at: https://github.com/sxyazi/yazi/tree/main/yazi-config/preset.

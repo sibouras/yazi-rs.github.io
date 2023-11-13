@@ -1,11 +1,3 @@
----
-sidebar_position: 2
-description: A quick guide on the basic usage of Yazi.
----
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Quick Start
 
 After [installing](./installation.md), use the following command to run it:
