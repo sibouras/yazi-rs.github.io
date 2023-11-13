@@ -1,17 +1,10 @@
----
-sidebar_position: 5
-description: A few helpful tips for using Yazi.
----
-
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 # Tips
 
 ## Full border
 
 You can implement a full border for Yazi via the UI plugin.
 
-<img src={useBaseUrl("/img/full-border.png")} width="600" />
+![](/img/full-border.png)
 
 Copy the preset [`Manager:render` function](https://github.com/sxyazi/yazi/blob/main/yazi-plugin/preset/components/manager.lua) to any place, for example `~/.config/yazi/ui.lua`, then apply the following patch:
 
@@ -89,7 +82,7 @@ To exiting input directly, without entering Vi mode, making it behave like a reg
 
 ## No status bar
 
-<img src={useBaseUrl("/img/no-status-bar.jpg")} width="600" />
+![](/img/no-status-bar.jpg)
 
 Save those lines as a file, for example `~/.config/yazi/ui.lua`:
 
@@ -119,7 +112,7 @@ preview_offset = [ 1, 1, 0, 1 ]
 
 ## Show symlink in status bar
 
-<img src={useBaseUrl("/img/symlink-in-status.png")} width="600" />
+![](/img/symlink-in-status.png)
 
 You only need to rewrite the [`Status:name()` method](https://github.com/sxyazi/yazi/blob/main/yazi-plugin/preset/components/status.lua#L39-L46) to achieve this feature, save this function as a file, and apply the following patch to it:
 

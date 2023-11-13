@@ -6,7 +6,7 @@ description: Answers to some frequently asked questions about Yazi.
 
 ## Why is Yazi fast?
 
-See [Why is Yazi fast?](/blog/why-is-yazi-fast).
+See [Why is Yazi fast?](./why-is-yazi-fast.md).
 
 ## Why am I getting a "Permission denied" when editing files in Linux/macOS?
 
@@ -84,7 +84,7 @@ On the other hand, tasks with `orphan=false` are scheduled through the Yazi task
 
 Yazi has `nerd-fonts` enabled by default, it looks really cool!
 
-If you don't want to use it and want things to be calm, sure, you can modify these icons as much as you want in [`theme.toml`](./configuration/theme.md):
+If you don't want to use it and want things to be calm, sure, you can modify these icons as much as you want in [`theme.toml`](../reference/configuration/theme.md):
 
 ```toml
 [status]

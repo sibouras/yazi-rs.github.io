@@ -1,12 +1,7 @@
----
-sidebar_position: 1
-description: Learn how to configure Yazi's basic functionality.
----
-
 # Yazi
 
 :::tip
-If you haven't created and used your own configuration file yet, please see [Configuration](./overview.mdx).
+If you haven't created and used your own configuration file yet, please see [Configuration](../configuration.md).
 :::
 
 ## manager

@@ -1,8 +1,3 @@
----
-sidebar_position: 3
-description: Learn how to configure your Yazi theme.
----
-
 # Theme
 
 :::tip

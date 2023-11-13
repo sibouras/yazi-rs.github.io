@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /markdown-examples
+      link: /guide/getting-started
     - theme: alt
       text: View on GitHub
       link: https://github.com/sxyazi/yazi
