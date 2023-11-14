@@ -14,13 +14,13 @@ Yazi can be _optionally_ extended with other command line tools to enable additi
 
 ## Arch Linux
 
-```bash
+```shell
 sudo pacman -S yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide
 ```
 
 If you want to use the latest git version, you can install it from [AUR](https://aur.archlinux.org/packages/yazi-git/) or [Arch Linux CN](https://github.com/archlinuxcn/repo/):
 
-```bash
+```shell
 paru -S yazi-git ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide
 ```
 
@@ -28,20 +28,20 @@ paru -S yazi-git ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide
 
 Install Yazi and its dependencies with Homebrew:
 
-```bash
+```shell
 brew install yazi ffmpegthumbnailer unar jq poppler fd ripgrep fzf zoxide
 brew tap homebrew/cask-fonts && brew install --cask font-symbols-only-nerd-font
 ```
 
 If you prefer to use the most recent code, use `--HEAD` flag:
 
-```bash
+```shell
 brew install yazi --HEAD
 ```
 
 Or you can install Yazi via cargo:
 
-```bash
+```shell
 cargo install --locked --git https://github.com/sxyazi/yazi.git
 ```
 
@@ -49,7 +49,7 @@ cargo install --locked --git https://github.com/sxyazi/yazi.git
 
 The [Nix package of Yazi](https://search.nixos.org/packages?channel=unstable&show=yazi) is available. Nix users can install Yazi via:
 
-```bash
+```shell
 # On NixOS:
 nix-env -iA nixos.yazi
 
@@ -71,7 +71,7 @@ You can also manage Yazi's configuration using the
 
 ## NetBSD
 
-```bash
+```shell
 pkgin install yazi
 ```
 
@@ -81,7 +81,7 @@ See [Windows Installation Guide](https://github.com/sxyazi/yazi/wiki/Windows-Ins
 
 ## Cargo
 
-```bash
+```shell
 cargo install --locked yazi-fm
 ```
 
@@ -89,13 +89,13 @@ cargo install --locked yazi-fm
 
 Install the latest stable Rust toolchain:
 
-```bash
+```shell
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 Clone the repository and build Yazi:
 
-```bash
+```shell
 git clone https://github.com/sxyazi/yazi.git
 cd yazi
 cargo build --release
@@ -103,6 +103,6 @@ cargo build --release
 
 Then, you can run:
 
-```bash
+```shell
 ./target/release/yazi
 ```
