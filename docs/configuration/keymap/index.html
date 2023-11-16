@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-configuration/keymap" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">Keymap | Yazi</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://yazi-rs.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://yazi-rs.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://yazi-rs.github.io/docs/configuration/keymap"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Keymap | Yazi"><meta data-rh="true" name="description" content="Learn how to configure keyboard shortcuts with Yazi."><meta data-rh="true" property="og:description" content="Learn how to configure keyboard shortcuts with Yazi."><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://yazi-rs.github.io/docs/configuration/keymap"><link data-rh="true" rel="alternate" href="https://yazi-rs.github.io/docs/configuration/keymap" hreflang="en"><link data-rh="true" rel="alternate" href="https://yazi-rs.github.io/docs/configuration/keymap" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Yazi RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Yazi Atom Feed"><link rel="stylesheet" href="/assets/css/styles.9262c60b.css">
+<script src="/assets/js/runtime~main.e249d2bd.js" defer="defer"></script>
+<script src="/assets/js/main.b8814596.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_NOja" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.png" alt="Yazi file manager" class="themedComponent_LOPD themedComponent--light_yK2g"><img src="/img/logo.png" alt="Yazi file manager" class="themedComponent_LOPD themedComponent--dark_Fl0Q"></div><b class="navbar__title text--truncate">Yazi</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/installation">Docs</a><a class="navbar__item navbar__link" href="/features">Features</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/sxyazi/yazi" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_bhIR"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_YTaE colorModeToggle_qy8v"><button class="clean-btn toggleButton_umoe toggleButtonDisabled_E0Um" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_gbvh"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_P_XK"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_h5OB"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_vKin"><div class="docsWrapper_rvnj"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_V2OZ" type="button"></button><div class="docRoot_XaJ2"><aside class="theme-doc-sidebar-container docSidebarContainer_e_QP"><div class="sidebarViewport_v3s7"><div class="sidebar_i8af"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Wnjz"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/installation">Installation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/quick-start">Quick Start</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/docs/configuration/overview">Configuration</a><button aria-label="Collapse sidebar category &#x27;Configuration&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/configuration/yazi">Yazi</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/configuration/keymap">Keymap</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/configuration/theme">Theme</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/faq">Frequently Asked Questions</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tips">Tips</a></li></ul></nav></div></div></aside><main class="docMainContainer_GB4D"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_THn3"><div class="docItemContainer_Jm77"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_GnD2" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_Mj1y"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/configuration/overview"><span itemprop="name">Configuration</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Keymap</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_Z0zM theme-doc-toc-mobile tocMobile_waK_"><button type="button" class="clean-btn tocCollapsibleButton_uVyA">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Keymap</h1>
+<div class="theme-admonition theme-admonition-tip admonition_fVaV alert alert--success"><div class="admonitionHeading_x7QR"><span class="admonitionIcon_bkAZ"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_Bkmm"><p>If you haven&#x27;t created and used your own configuration file yet, please see <a href="/docs/configuration/overview">Configuration</a>.</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_k3fG" id="manager">manager<a href="#manager" class="hash-link" aria-label="Direct link to manager" title="Direct link to manager">​</a></h2>
+<ul>
+<li>
+<p>escape: Cancel find, exit visual mode, clear selected, or cancel search.</p>
+<ul>
+<li><code>--all</code>: Do all of the above.</li>
+<li><code>--find</code>: Cancel find.</li>
+<li><code>--visual</code>: Exit visual mode.</li>
+<li><code>--select</code>: Clear selected.</li>
+<li><code>--search</code>: Cancel search.</li>
+</ul>
+<p>Automatically determine the operation by default, and it will only execute the selected operation after specifying the option; multiple options can be stacked.</p>
+</li>
+<li>
+<p>quit: Exit the process.</p>
+<ul>
+<li><code>--no-cwd-file</code>: Don&#x27;t write the current directory to the <code>cwd-file</code>.</li>
+</ul>
+</li>
+<li>
+<p>close: Close the current tab; if it is the last tab, then exit the process.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_k3fG" id="navigation">Navigation<a href="#navigation" class="hash-link" aria-label="Direct link to Navigation" title="Direct link to Navigation">​</a></h3>
+<ul>
+<li>
+<p>arrow</p>
+<ul>
+<li><code>n</code> / <code>n%</code>: Move the cursor up or down by <code>n</code> or <code>n%</code> lines. Use negative values to move up and positive values to move down.</li>
+</ul>
+</li>
+<li>
+<p>leave: Go back to the parent directory.</p>
+</li>
+<li>
+<p>enter: Enter the child directory.</p>
+</li>
+<li>
+<p>back: Go back to the previous directory.</p>
+</li>
+<li>
+<p>forward: Go forward to the next directory.</p>
+</li>
+<li>
+<p>peek</p>
+<ul>
+<li><code>n</code>: Peek up or down at file contents in the preview. Use negative values to peek up and positive values to peek down.</li>
+</ul>
+</li>
+<li>
+<p>cd: Change the current directory.</p>
+<ul>
+<li><code>path</code>: the path to change to.</li>
+<li><code>--interactive</code>: Use an interactive UI to input the path.</li>
+</ul>
+</li>
+<li>
+<p>reveal: Change the current directory to the parent of specified file, and hover on it.</p>
+<ul>
+<li><code>path</code>: the path to reveal.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_k3fG" id="selection">Selection<a href="#selection" class="hash-link" aria-label="Direct link to Selection" title="Direct link to Selection">​</a></h3>
+<ul>
+<li>
+<p>select</p>
+<ul>
+<li><code>--state=true</code>: Select the current file.</li>
+<li><code>--state=false</code>: Deselect the current file.</li>
+<li><code>--state=none</code>: Default, toggle the selection state of the current file.</li>
+</ul>
+</li>
+<li>
+<p>select_all</p>
+<ul>
+<li><code>--state=true</code>: Select all files.</li>
+<li><code>--state=false</code>: Deselect all files.</li>
+<li><code>--state=none</code>: Default, toggle the selection state of all files.</li>
+</ul>
+</li>
+<li>
+<p>visual_mode: Enter visual mode (selection mode).</p>
+<ul>
+<li><code>--unset</code>: Enter visual mode (unset mode).</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_k3fG" id="operation">Operation<a href="#operation" class="hash-link" aria-label="Direct link to Operation" title="Direct link to Operation">​</a></h3>
+<ul>
+<li>
+<p>open: Open the selected files.</p>
+<ul>
+<li><code>--interactive</code>: Open the selected files with an interactive UI to choose the opening method.</li>
+</ul>
+</li>
+<li>
+<p>yank: Yank the selected files.</p>
+<ul>
+<li><code>--cut</code>: Cut the selected files.</li>
+</ul>
+</li>
+<li>
+<p>paste: Paste the yanked files.</p>
+<ul>
+<li><code>--force</code>: Overwrite the destination file if it exists.</li>
+</ul>
+</li>
+<li>
+<p>link: Create a symbolic link to the yanked files. (This is a privileged action in Windows and must be run as an administrator.)</p>
+<ul>
+<li><code>--relative</code>: Use a relative path for the symbolic link.</li>
+<li><code>--force</code>: Overwrite the destination file if it exists.</li>
+</ul>
+</li>
+<li>
+<p>remove: Move the files to the trash/recycle bin.</p>
+<ul>
+<li><code>--force</code>: Don&#x27;t show the confirmation dialog, and trash/delete files directly.</li>
+<li><code>--permanently</code>: Permanently delete the files.</li>
+</ul>
+</li>
+<li>
+<p>create: Create a file or directory. Ends with <code>/</code> (Unix) or <code>\</code> (Windows) for directories.</p>
+<ul>
+<li><code>--force</code>: Overwrite the destination file directly if it exists, without showing the confirmation dialog.</li>
+</ul>
+</li>
+<li>
+<p>rename: Rename a file or directory.</p>
+<ul>
+<li><code>--force</code>: Overwrite the destination file directly if it exists, without showing the confirmation dialog.</li>
+</ul>
+</li>
+<li>
+<p>copy: Copy the path of files or directories that are selected or hovered on.</p>
+<ul>
+<li><code>path</code>: Copy the absolute path.</li>
+<li><code>dirname</code>: Copy the path of the parent directory.</li>
+<li><code>filename</code>: Copy the name of the file.</li>
+<li><code>name_without_ext</code>: Copy the name of the file without the extension.</li>
+</ul>
+</li>
+<li>
+<p>shell: Run a shell command.</p>
+<ul>
+<li><code>exec</code>: Optional, command template to be run.</li>
+<li><code>--block</code>: Open in a blocking manner. After setting this, Yazi will hide into a secondary screen and display the program on the main screen until it exits. During this time, it can receive I/O signals, which is useful for interactive programs.</li>
+<li><code>--confirm</code>: When the template is provided, run it directly, no input UI was shown.</li>
+</ul>
+</li>
+<li>
+<p>hidden: Set the visibility of hidden files.</p>
+<ul>
+<li><code>show</code>: Show hidden files.</li>
+<li><code>hide</code>: Hide hidden files.</li>
+<li><code>toggle</code>: Default, toggle the hidden state.</li>
+</ul>
+</li>
+<li>
+<p>linemode: Set the line mode.</p>
+<ul>
+<li><code>none</code>: No line mode.</li>
+<li><code>size</code>: Display the size of the file.</li>
+<li><code>permissions</code>: Display the permissions of the file.</li>
+<li><code>mtime</code>: Display the last modified time of the file.</li>
+</ul>
+<p>In addition, you can also specify any 1 to 20 characters, and extend it within a UI plugin.
+Which means you can implement your own linemode through the plugin by simply overriding the <a href="https://github.com/sxyazi/yazi/blob/main/plugin/preset/components/folder.lua" target="_blank" rel="noopener noreferrer"><code>Folder:linemode</code> method</a>.</p>
+</li>
+<li>
+<p>search</p>
+<ul>
+<li><code>rg</code>: Search files by content using ripgrep.</li>
+<li><code>fd</code>: Search files by name using fd.</li>
+<li><code>none</code>: Default, cancel the ongoing search.</li>
+</ul>
+</li>
+<li>
+<p>jump</p>
+<ul>
+<li><code>fzf</code>: Jump to a directory, or reveal a file using fzf.</li>
+<li><code>zoxide</code>: Jump to a directory using zoxide.</li>
+</ul>
+</li>
+<li>
+<p>find</p>
+<ul>
+<li><code>query</code>: Optional, the query to find for. If not provided, a interactive UI will be used to input with.</li>
+<li><code>--previous</code>: Find for the previous occurrence.</li>
+<li><code>--smart</code>: Use smart-case when finding, i.e. case-sensitive if the query contains uppercase characters, otherwise case-insensitive.</li>
+<li><code>--insensitive</code>: Use case-insensitive find.</li>
+</ul>
+</li>
+<li>
+<p>find_arrow: Move the cursor to the next or previous occurrence.</p>
+<ul>
+<li><code>--previous</code>: Move to the previous occurrence.</li>
+</ul>
+</li>
+<li>
+<p>sort</p>
+<ul>
+<li><code>by</code>: Optional, if not provided, the sort method will be kept unchanged.<!-- -->
+<ul>
+<li><code>&quot;none&quot;</code>: Don&#x27;t sort.</li>
+<li><code>&quot;alphabetical&quot;</code>: Sort alphabetically, e.g. <code>1.md</code> &lt; <code>10.md</code> &lt; <code>2.md</code></li>
+<li><code>&quot;created&quot;</code>: Sort by creation time.</li>
+<li><code>&quot;modified&quot;</code>: Sort by last modified time.</li>
+<li><code>&quot;natural&quot;</code>: Sort naturally, e.g. <code>1.md</code> &lt; <code>2.md</code> &lt; <code>10.md</code></li>
+<li><code>&quot;size&quot;</code>: Sort by file size.</li>
+</ul>
+</li>
+<li><code>--reverse</code>: Display files in reverse order.</li>
+<li><code>--dir_first</code>: Display directories first.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_k3fG" id="tabs">Tabs<a href="#tabs" class="hash-link" aria-label="Direct link to Tabs" title="Direct link to Tabs">​</a></h3>
+<ul>
+<li>
+<p>tab_create</p>
+<ul>
+<li><code>path</code>: Create a new tab using the specified path.</li>
+<li><code>--current</code>: Create a new tab using the current path.</li>
+</ul>
+</li>
+<li>
+<p>tab_close</p>
+<ul>
+<li><code>n</code>: Close the tab at position n, starting from 0.</li>
+</ul>
+</li>
+<li>
+<p>tab_switch</p>
+<ul>
+<li><code>n</code>: Switch to the tab at position n, starting from 0.</li>
+<li><code>--relative</code>: Switch to the tab at a position relative to the current tab. The value of n can be negative when using this parameter.</li>
+</ul>
+</li>
+<li>
+<p>tab_swap</p>
+<ul>
+<li><code>n</code>: Swap the current tab with the tab at position n, where negative values move the tab forward, and positive values move it backward.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_k3fG" id="tasks">Tasks<a href="#tasks" class="hash-link" aria-label="Direct link to Tasks" title="Direct link to Tasks">​</a></h3>
+<ul>
+<li>tasks_show: Show the task manager.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_k3fG" id="help">Help<a href="#help" class="hash-link" aria-label="Direct link to Help" title="Direct link to Help">​</a></h3>
+<ul>
+<li>help: Open the help menu.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_k3fG" id="tasks-1">tasks<a href="#tasks-1" class="hash-link" aria-label="Direct link to tasks" title="Direct link to tasks">​</a></h2>
+<ul>
+<li>close: Hide the task manager.</li>
+<li>arrow:<!-- -->
+<ul>
+<li><code>-1</code>: Move the cursor up 1 line.</li>
+<li><code>1</code>: Move the cursor down 1 line.</li>
+</ul>
+</li>
+<li>inspect: Inspect the task (press <code>q</code> to exit the inspect view).</li>
+<li>cancel: Cancel the task.</li>
+<li>help: Open the help menu.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_k3fG" id="select">select<a href="#select" class="hash-link" aria-label="Direct link to select" title="Direct link to select">​</a></h2>
+<ul>
+<li>close: Cancel selection.<!-- -->
+<ul>
+<li><code>--submit</code>: Submit the selection.</li>
+</ul>
+</li>
+<li>arrow<!-- -->
+<ul>
+<li><code>n</code>: Move the cursor up or down n lines. Negative value for up, positive value for down.</li>
+</ul>
+</li>
+<li>help: Open the help menu.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_k3fG" id="input">input<a href="#input" class="hash-link" aria-label="Direct link to input" title="Direct link to input">​</a></h2>
+<ul>
+<li>
+<p>close: Cancel input.</p>
+<ul>
+<li><code>--submit</code>: Submit the input.</li>
+</ul>
+</li>
+<li>
+<p>escape: Go back the normal mode, or cancel input.</p>
+</li>
+<li>
+<p>move: Move the cursor left or right.</p>
+<ul>
+<li><code>n</code>: Move the cursor n characters left or right. Negative value for left, positive value for right.</li>
+<li><code>--in-operating</code>: Move the cursor only if its currently waiting for an operation.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_k3fG" id="normal-mode">Normal mode<a href="#normal-mode" class="hash-link" aria-label="Direct link to Normal mode" title="Direct link to Normal mode">​</a></h3>
+<ul>
+<li>
+<p>insert: Enter insert mode.</p>
+<ul>
+<li><code>--append</code>: Insert after the cursor.</li>
+</ul>
+</li>
+<li>
+<p>visual: Enter visual mode.</p>
+</li>
+<li>
+<p>backward: Move to the beginning of the previous word.</p>
+</li>
+<li>
+<p>forward: Move to the beginning of the next word.</p>
+<ul>
+<li><code>--end-of-word</code>: Move to the end of the next word.</li>
+</ul>
+</li>
+<li>
+<p>delete: Delete the selected characters.</p>
+<ul>
+<li><code>--cut</code>: Cut the selected characters into clipboard, instead of only deleting them.</li>
+<li><code>--insert</code>: Delete and enter insert mode.</li>
+</ul>
+</li>
+<li>
+<p>yank: Copy the selected characters.</p>
+</li>
+<li>
+<p>paste: Paste the copied characters after the cursor.</p>
+<ul>
+<li><code>--before</code>: Paste the copied characters before the cursor.</li>
+</ul>
+</li>
+<li>
+<p>undo: Undo the last operation.</p>
+</li>
+<li>
+<p>redo: Redo the last operation.</p>
+</li>
+<li>
+<p>help: Open the help menu.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_k3fG" id="insert-mode">Insert mode<a href="#insert-mode" class="hash-link" aria-label="Direct link to Insert mode" title="Direct link to Insert mode">​</a></h3>
+<ul>
+<li>
+<p>close: Cancel input.</p>
+<ul>
+<li><code>--submit</code>: Submit the input.</li>
+</ul>
+</li>
+<li>
+<p>escape: Cancel insert mode and enter normal mode.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_k3fG" id="help-1">Help<a href="#help-1" class="hash-link" aria-label="Direct link to Help" title="Direct link to Help">​</a></h2>
+<ul>
+<li>close: Hide the help menu.</li>
+<li>escape: Clear the filter, or hide the help menu.</li>
+<li>arrow<!-- -->
+<ul>
+<li><code>n</code>: Move the cursor up or down n lines. Negative value for up, positive value for down.</li>
+</ul>
+</li>
+<li>filter: Apply a filter for the help items.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_k3fG" id="completion">Completion<a href="#completion" class="hash-link" aria-label="Direct link to Completion" title="Direct link to Completion">​</a></h2>
+<ul>
+<li>
+<p>close: Hide the completion menu.</p>
+<ul>
+<li><code>--submit</code>: Submit the completion.</li>
+</ul>
+</li>
+<li>
+<p>arrow</p>
+<ul>
+<li><code>n</code>: Move the cursor up or down n lines. Negative value for up, positive value for down.</li>
+</ul>
+</li>
+<li>
+<p>help: Open the help menu.</p>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/yazi-rs/yazi-rs.github.io/edit/main/docs/configuration/keymap.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_t6zj" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_HWUF"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/configuration/yazi"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Yazi</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/configuration/theme"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Theme</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_kbKY thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#manager" class="table-of-contents__link toc-highlight">manager</a><ul><li><a href="#navigation" class="table-of-contents__link toc-highlight">Navigation</a></li><li><a href="#selection" class="table-of-contents__link toc-highlight">Selection</a></li><li><a href="#operation" class="table-of-contents__link toc-highlight">Operation</a></li><li><a href="#tabs" class="table-of-contents__link toc-highlight">Tabs</a></li><li><a href="#tasks" class="table-of-contents__link toc-highlight">Tasks</a></li><li><a href="#help" class="table-of-contents__link toc-highlight">Help</a></li></ul></li><li><a href="#tasks-1" class="table-of-contents__link toc-highlight">tasks</a></li><li><a href="#select" class="table-of-contents__link toc-highlight">select</a></li><li><a href="#input" class="table-of-contents__link toc-highlight">input</a><ul><li><a href="#normal-mode" class="table-of-contents__link toc-highlight">Normal mode</a></li><li><a href="#insert-mode" class="table-of-contents__link toc-highlight">Insert mode</a></li></ul></li><li><a href="#help-1" class="table-of-contents__link toc-highlight">Help</a></li><li><a href="#completion" class="table-of-contents__link toc-highlight">Completion</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Resources</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/installation">Docs</a></li><li class="footer__item"><a class="footer__link-item" href="/features">Features</a></li><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/qfADduSdJu" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord (English mainly)<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_bhIR"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://t.me/yazi_rs" target="_blank" rel="noopener noreferrer" class="footer__link-item">Telegram (Chinese mainly)<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_bhIR"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/sxyazi/yazi" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_bhIR"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 Yazi. Built with ❤️️.</div></div></div></footer></div>
+</body>
+</html>
